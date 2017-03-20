@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+	version="2.4">
+	<display-name>subinfo_mobi</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>UploadImageServlet</servlet-name>
+		<servlet-class>vn.gmobile.subinfo_reg.web.UploadImageServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UploadImageServlet</servlet-name>
+		<url-pattern>/uploadimg</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ActionServlet</servlet-name>
+		<servlet-class>vn.gmobile.subinfo_reg.web.ActionServlet</servlet-class>
+		<init-param>
+			<param-name>/updateuser</param-name>
+			<param-value>vn.gmobile.subinfo_reg.message.UserUpdateRequest</param-value>
+		</init-param>
+		<init-param>
+			<param-name>/getotp</param-name>
+			<param-value>vn.gmobile.subinfo_reg.message.OTPGetRequest</param-value>
+		</init-param>
+		
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ActionServlet</servlet-name>
+		<url-pattern>/updateuser</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ActionServlet</servlet-name>
+		<url-pattern>/getotp</url-pattern>
+	</servlet-mapping>
+
+</web-app>

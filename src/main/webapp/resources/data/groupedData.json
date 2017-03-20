@@ -1,0 +1,33 @@
+{
+    "items" : [{
+                "text" : "Apple",
+                "items" : [{
+                            "text" : "Safari",
+                            "leaf" : true
+                        }]
+            }, {
+                "text" : "Google",
+                "items" : [{
+                            "text" : "Chrome",
+                            "leaf" : true
+                        }]
+            }, {
+                "text" : "Mozilla",
+                "items" : [{
+                            "text" : "Firefox",
+                            "leaf" : true
+                        }]
+            }, {
+                "text" : "Opera",
+                "items" : [{
+                            "text" : "Opera",
+                            "leaf" : true
+                        }]
+            }, {
+                "text" : "Zero",
+                "items" : [{
+                            "text" : "IE",
+                            "leaf" : true
+                        }]
+            }]
+}
